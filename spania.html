@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spania</title>
 
     <style>
-        h1{
+        h1 {
             text-align: center;
             background-color: lightblue;
             color: white;
@@ -15,11 +16,11 @@
             margin-bottom: 10px;
         }
 
-        h1:hover{
+        h1:hover {
             filter: brightness(1.15) contrast(0.95) saturate(1.1);
         }
 
-        img{
+        img {
             height: 100%;
             width: 100%;
             object-fit: cover;
@@ -27,58 +28,60 @@
             transition: 2s;
         }
 
-        img:hover{
+        img:hover {
             filter: brightness(1.15) contrast(0.95) saturate(1.1);
         }
 
-        .hoved{
+        .hoved {
             display: flex;
             gap: 10px;
         }
 
-        .container{
+        .container {
             height: 50%;
             width: 50%;
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 10px;
         }
 
-        div{
+        div {
             height: 100%;
             width: 100%;
         }
 
-        .stor{
+        .stor {
             grid-column: span 2;
             grid-row: span 2;
         }
-        
-        .bred{
+
+        .bred {
             grid-column: span 2;
         }
     </style>
 </head>
+
 <body>
     <h1>Spania</h1>
     <div class="hoved">
         <div class="container">
-            <div><img src="bilder/Spania1.jpg" ></div>
-            <div class="stor"><img src="bilder/Spania2.jpg" ></div>
+            <div><img src="bilder/Spania1.jpg"></div>
+            <div class="stor"><img src="bilder/Spania2.jpg"></div>
             <div><img src="bilder/Spania4.jpg"></div>
             <div><img src="bilder/Spania5.jpg"></div>
-            <div><img src="bilder/Spania7.jpg" ></div>
+            <div><img src="bilder/Spania7.jpg"></div>
             <div><img src="bilder/Spania8.jpg"></div>
-        <div><img src="bilder/Spania9.jpg"></div>
-        <div><img src="bilder/Spania6.jpg"></div>
-        <div><img src="bilder/spania15.jpg"></div>
+            <div><img src="bilder/Spania9.jpg"></div>
+            <div><img src="bilder/Spania6.jpg"></div>
+            <div><img src="bilder/spania15.jpg"></div>
+        </div>
+        <div class="container">
+            <div class="stor"><img src="bilder/Spania11.jpg"></div>
+            <div><img src="bilder/spania12.jpg"></div>
+            <div><img src="bilder/spania13.jpg"></div>
+            <img class="bred" src="bilder/spania14.jpg">
+        </div>
     </div>
-    <div class="container">
-        <div class="stor"><img src="bilder/Spania11.jpg"></div>
-        <div><img src="bilder/spania12.jpg"></div>
-        <div><img src="bilder/spania13.jpg"></div>
-        <img class="bred" src="bilder/spania14.jpg">
-    </div>
-</div>
 </body>
+
 </html>

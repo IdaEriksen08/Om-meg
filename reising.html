@@ -1,189 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reising</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Reising</title>
 
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        
-     header{
-        height: 30px;
-        width: 100%;
-        background-color: rgba(239, 233, 238, 0.436);  
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 40px;
-     }
+   <style>
+      body {
+         margin: 0;
+         padding: 0;
+      }
 
-     p{
-        margin: 0;
-        padding-top: 5px;
-        padding-left: 10px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 600;
-        font-size: 12px;
-     }
-
-     a{
-        color: black;
-        text-decoration: none;
-     }
-
-     h1{
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-weight: 100;
-        color: rgb(157, 194, 217);
-     }
-
-     .overskrift{
-        font-size: 40px;
-     }
-
-     .underskrift{
-        text-align: center;
-        max-width: 500px;
-        margin-left: auto;
-        margin-right: auto;
-     }
-
-     .section2{
-      height: 200px;
-      display: grid;
-      grid-template-columns: repeat(2,2fr);
-      gap: 10px;
-      margin-top: 30px;
-      margin-left: 10px;
-      margin-right: 10px;
-      
-     }
-
-     div{
-        height: 100%;
-        width: 100%;
-     }
-
-     .informasjon{
-        background-color: rgba(239, 233, 238, 0.436);
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-     }
-
-     img{
-        height: 100%;
-        width: 100%;
-     }
-
-     h2{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-weight: 100;
-        font-size: 28px;
-     }
-
-     .avsnitt{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-weight: 100;
-        padding-left: 70px;
-        padding-right: 70px;
-        font-size: 14px;
-     }
-
-     .section3{
-         margin-top: 460px;
-        }
-
-        .section4{
+       header {
             display: flex;
-            justify-content: center;
-            gap: 10px;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: transparent;
+            max-width: 600px;
+            margin: auto;
+            border-bottom: black 1px solid;
+            margin-top: 20px;
         }
-        
-        .section4 img{
-            height: 250px;
-            width: 250px;
-     }
 
-     
-     .section5{
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+        }
+
+      p {
+         margin: 0;
+         padding-top: 5px;
+         padding-left: 10px;
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         font-weight: 600;
+         font-size: 12px;
+      }
+
+      h1 {
+         text-align: center;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         font-weight: 100;
+         color: rgb(157, 194, 217);
+      }
+
+      .overskrift {
+         font-size: 40px;
+      }
+
+      .underskrift {
+         text-align: center;
+         max-width: 500px;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      .section2 {
+         height: 100%;
+         display: grid;
+         grid-template-columns: repeat(2, 2fr);
+         gap: 10px;
+         margin-top: 30px;
+         margin-left: 10px;
+         margin-right: 10px;
+
+      }
+
+      div {
+         height: 100%;
+         width: 100%;
+      }
+
+      .informasjon {
+         background-color: rgba(239, 233, 238, 0.436);
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+      }
+
+      img {
+         height: 100%;
+         width: 100%;
+      }
+
+      h2 {
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         font-weight: 100;
+         font-size: 28px;
+      }
+
+      .avsnitt {
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         font-weight: 100;
+         padding-left: 70px;
+         padding-right: 70px;
+         font-size: 14px;
+      }
+
+      .section4 {
+         display: flex;
+         justify-content: center;
+         gap: 10px;
+      }
+
+      .section4 img {
+         height: 250px;
+         width: 250px;
+      }
+
+
+      .section5 {
          display: flex;
          justify-content: center;
          gap: 10px;
          margin-top: 0px;
-        }
-        
-        h3{
-            width: 240px;
-            background-color: rgba(239, 233, 238, 0.436);
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            text-align: center;
-            font-weight: 500;
-            font-size: 15px;
-            padding: 5px;
-            
-        }
+      }
 
-        h3:hover{
-           transform: scale(1.1);
-        }
-    </style>
+      h3 {
+         width: 240px;
+         background-color: rgba(239, 233, 238, 0.436);
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         text-align: center;
+         font-weight: 500;
+         font-size: 15px;
+         padding: 5px;
+
+      }
+
+      h3:hover {
+         transform: scale(1.1);
+      }
+   </style>
 </head>
 
 <body>
-    <header>
-     <a href="Ida.html">
-        <p>Om meg</p>
-     </a>
-     <a href="Interesser.html">
-        <p>Interesser</p>
-     </a>
-     <a href="fritid.html">
-        <p>Fritid</p>
-     </a>
-     <a href="skoledag.html">
-        <p>Skoledag</p>
-     </a>
-    </header>
 
-    <main>
-        <section class="section1">
-            <h1 class="overskrift">IDA I UTLANDET</h1>
-            <p class="underskrift">Å reise er noe av det beste jeg vet om! Jeg er veldig i glad i å ta bilder når jeg er på ferie, derfor har jeg laget bildegallerier fra mine 3 favorittsteder. </p>
-        </section>
+   <header>
+      <a href="Ida.html">
+         <p>Om meg</p>
+      </a>
+      <a href="Interesser.html">
+         <p>Interesser</p>
+      </a>
+      <a href="venner.html">
+         <p>Venner</p>
+      </a>
+      <a href="skoledag.html">
+         <p>Skoledag</p>
+      </a>
+   </header>
 
-        <section class="section2">
-            <div><img src="bilder/calador.jpg" alt=""></div>
+   <main>
+      <section class="section1">
+         <h1 class="overskrift">IDA I UTLANDET</h1>
+         <p class="underskrift">Å reise er noe av det beste jeg vet om! Jeg er veldig i glad i å ta bilder når jeg er på
+            ferie, derfor har jeg laget bildegallerier fra mine 3 favorittsteder. </p>
+      </section>
 
-            <div class="informasjon">
+      <section class="section2">
+         <div><img src="bilder/calador.jpg" alt=""></div>
+
+         <div class="informasjon">
             <h2>Hvorfor liker jeg å reise?</h2>
-            <p class="avsnitt">Jeg liker å reise fordi det gir meg en følelse av frihet og eventyr. Når jeg besøker nye steder, får jeg oppleve ulike kulturer, smake ny mat og møte spennende mennesker. Det er inspirerende å se hvordan folk lever på andre måter, og det får meg til å sette mer pris på verden rundt meg. Hver reise gir meg minner, nye perspektiver og en følelse av glede som varer lenge etter at jeg har kommet hjem.</p>
-            </div>
-        </section>
+            <p class="avsnitt">Jeg liker å reise fordi det gir meg en følelse av frihet og eventyr. Når jeg besøker nye
+               steder, får jeg oppleve ulike kulturer, smake ny mat og møte spennende mennesker. Det er inspirerende å
+               se hvordan folk lever på andre måter, og det får meg til å sette mer pris på verden rundt meg. Hver reise
+               gir meg minner, nye perspektiver og en følelse av glede som varer lenge etter at jeg har kommet hjem.</p>
+         </div>
+      </section>
 
-        <section class="section3">
-         <h1>MINE TOP 3 REISEDESTINASJONER</h1>
-        </section>
-         
-        
-        <section class="section4">
-            <a href="spania.html"><img src="bilder/Spaniaforside.jpg" ></a>
-            <a href="england.html"><img src="bilder/London4.jpg" alt=""></a> 
-            <a href="kroatia.html"><img src="bilder/Kroatia2.jpg" alt=""></a>
-        </section>
+      <section class="section3">
+         <h1>MINE TOPP 3 REISEDESTINASJONER</h1>
+      </section>
 
-        <section class="section5">
-            <a href="spania.html"><h3>Spania</h3></a>
-            <a href="england.html"><h3>England</h3></a>
-            <a href="kroatia.html"><h3>Kroatia</h3></a>
-        </section>
-    </main>
+
+      <section class="section4">
+         <a href="spania.html"><img src="bilder/Spaniaforside.jpg"></a>
+         <a href="england.html"><img src="bilder/London4.jpg" alt=""></a>
+         <a href="kroatia.html"><img src="bilder/Kroatia2.jpg" alt=""></a>
+      </section>
+
+      <section class="section5">
+         <a href="spania.html">
+            <h3>Spania</h3>
+         </a>
+         <a href="england.html">
+            <h3>England</h3>
+         </a>
+         <a href="kroatia.html">
+            <h3>Kroatia</h3>
+         </a>
+      </section>
+   </main>
 </body>
+
 </html>

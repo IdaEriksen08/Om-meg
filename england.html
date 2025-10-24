@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <style>
-        h1{
+    <style>
+        h1 {
             text-align: center;
             background-color: rgb(120, 27, 27);
             color: white;
@@ -14,11 +15,11 @@
             margin-bottom: 10px;
         }
 
-        h1:hover{
+        h1:hover {
             filter: brightness(1.15) contrast(0.95) saturate(1.1);
         }
 
-        img{
+        img {
             height: 100%;
             width: 100%;
             object-fit: cover;
@@ -26,57 +27,59 @@
             transition: 2s;
         }
 
-        img:hover{
+        img:hover {
             filter: brightness(1.15) contrast(0.95) saturate(1.1);
         }
 
-        .hoved{
+        .hoved {
             display: flex;
             gap: 10px;
         }
 
-        .container{
+        .container {
             height: 50%;
             width: 50%;
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 10px;
         }
 
-        div{
+        div {
             height: 100%;
             width: 100%;
         }
 
-        .stor{
+        .stor {
             grid-column: span 2;
             grid-row: span 2;
         }
-        
-        .bred{
+
+        .bred {
             grid-column: span 2;
         }
     </style>
 </head>
+
 <body>
     <h1>England</h1>
     <div class="hoved">
         <div class="container">
-            <div><img src="bilder/London1.jpg" ></div>
-            <div class="stor"><img src="bilder/London2.jpg" ></div>
+            <div><img src="bilder/London1.jpg"></div>
+            <div class="stor"><img src="bilder/London2.jpg"></div>
             <div><img src="bilder/London12.jpg"></div>
             <div><img src="bilder/London8.jpg"></div>
-            <div><img src="bilder/London14.jpg" ></div>
+            <div><img src="bilder/London14.jpg"></div>
             <div><img src="bilder/London6.jpg"></div>
-        <div><img src="bilder/London3.jpg"></div>
-        <div class="bred"><img src="bilder/london11.jpg"></div>
-    </div>
-    <div class="container">
-        <img class="bred" src="bilder/London13.jpg">
-        <div class="stor"><img src="bilder/London7.jpg"></div>
-        <div class="stor"><img src="bilder/london9.jpg"></div>
-        <div ><img src="bilder/London10.jpg"></div>
-        <div><img src="bilder/London4.jpg" alt=""></div>
-    </div>
+            <div><img src="bilder/London3.jpg"></div>
+            <div class="bred"><img src="bilder/london11.jpg"></div>
+        </div>
+        <div class="container">
+            <img class="bred" src="bilder/London13.jpg">
+            <div class="stor"><img src="bilder/London7.jpg"></div>
+            <div class="stor"><img src="bilder/london9.jpg"></div>
+            <div><img src="bilder/London10.jpg"></div>
+            <div><img src="bilder/London4.jpg" alt=""></div>
+        </div>
 </body>
+
 </html>
