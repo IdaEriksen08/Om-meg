@@ -1,150 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venner</title>
-
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body{
-            font-family: Georgia,serif;
-        }
-
-        header{
-            position: absolute;
-            top: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 30px;
-            z-index: 100;
-        }
-        
-        header a{
-            color: white;
-            text-decoration: none;
-            letter-spacing: 2px;
-        }
-
-        a:hover{
-            transform: scale(1.1);
-        }
-
-        header p{
-            font-size: 2rem;
-            color: white;
-            font-weight: bold;
-        }
-
-        .section1{
-            height: 100vh;
-            background-image: url(bilder/Alicia2.jpg);
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 60px;
-            color: white;
-        }   
-
-        .section1 p{
-            max-width: 500px;
-        }
-
-        .section2{
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 40px;
-            padding: 80px 60px;
-            background: #f5f5f0;
-            text-align: center;
-        }
-
-        .section2 h3{
-            font-size: medium;
-            font-weight: 300;
-        }
-
-        .section2 p{
-            font-size: large;
-        }
-
-        .boks img{
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            margin: 20px 0;
-        } 
-
-        .section3{
-            height: 600px;
-            background-image: url(bilder/Alicia4.jpg);
-            background-size: cover;
-            background-position: center;
-           display: flex;
-           justify-content: center;
-           color: white;
-           text-align: center;
-           padding: 60px;
-           padding-top: 100px;
-        }
-
-        .section3 h2{
-            font-size: 40px;
-            font-weight: 100;
-            line-height: 1.4;
-        }
-
-        .section4{
-            margin-top: 70px;
-            background-color: #f5f5f0;
-        }
-        
-        .container{
-            height: 50%;
-            width: 50%;
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            gap: 10px;
-        }
-
-        .hoved{
-            display: flex;
-            gap: 10px;
-        }
-
-        div{
-            height: 100%;
-            width: 100%;
-        }
-
-        .stor{
-            grid-column: span 2;
-            grid-row: span 2;
-        }
-        
-        .bred{
-            grid-column: span 2;
-        }
-
-        img{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            filter: grayscale(0%);
-            transition: 2s;
-        }
-
-    </style>
+    <link rel="stylesheet" href="venner.css">
 </head>
+
 <body>
     <header>
         <a href="Ida.html">Om meg</a>
@@ -155,24 +18,30 @@
     </header>
 
     <section class="section1">
-       <p>Venner betyr utrolig mye for meg. De gjør hverdagen lysere og helgene morsommere, og jeg setter stor pris på å ha mennesker rundt meg som jeg kan le, snakke og finne på ting med.</p>
+        <p>Venner betyr utrolig mye for meg. De gjør hverdagen lysere og helgene morsommere, og jeg setter stor pris på
+            å ha mennesker rundt meg som jeg kan le, snakke og finne på ting med.</p>
     </section>
 
     <section class="section2">
         <div class="boks">
             <p>Anne</p>
-            <img src="bilder/Anne.jpg" >
-            <h3>Anne er en veldig snill og god venn som alltid vet hva man skal gjøre. Hun er typen som alltid stiller opp, enten det er for å høre på hva man har å si eller bare henge på sofaen med kaffe og snacks.</h3>
+            <img src="bilder/Anne.jpg">
+            <h3>Anne er en veldig snill og god venn som alltid vet hva man skal gjøre. Hun er typen som alltid stiller
+                opp, enten det er for å høre på hva man har å si eller bare henge på sofaen med kaffe og snacks.</h3>
         </div>
         <div class="boks">
             <p>Julie</p>
             <img src="bilder/Julie.jpg">
-            <h3>Julie er min aller nærmeste venn og har kjent meg helt siden 2010. Hun er energisk og sprudlene og kan få meg til å le i enhver situasjon. Hun er med på alt og gjør hver eneste tur bedre, enten det er spontane byturer eller om det er en ferie som har vært planlagt lenge.</h3>
+            <h3>Julie er min aller nærmeste venn og har kjent meg helt siden 2010. Hun er energisk og sprudlene og kan
+                få meg til å le i enhver situasjon. Hun er med på alt og gjør hver eneste tur bedre, enten det er
+                spontane byturer eller om det er en ferie som har vært planlagt lenge.</h3>
         </div>
         <div class="boks">
             <p>Miriam</p>
             <img src="bilder/Miriam.jpg">
-            <h3>Miriam er veldig morsom og er med på alt mulig! Om man vil finne på noe, uansett hva det er, blir Miriam alltid med (med mindre hun har trening). Hun er omsorgsfull og stiller alltid opp om man trenger noen å snakke med.</h3>
+            <h3>Miriam er veldig morsom og er med på alt mulig! Om man vil finne på noe, uansett hva det er, blir Miriam
+                alltid med (med mindre hun har trening). Hun er omsorgsfull og stiller alltid opp om man trenger noen å
+                snakke med.</h3>
         </div>
     </section>
 
@@ -183,21 +52,22 @@
     <section class="section4">
         <div class="hoved">
             <div class="container">
-                <div><img src="bilder/Anne.jpg" ></div>
-                <div class="stor"><img src="bilder/Amie.jpg" ></div>
+                <div><img src="bilder/Anne.jpg"></div>
+                <div class="stor"><img src="bilder/Amie.jpg"></div>
                 <div><img src="bilder/Elise.jpg"></div>
                 <div><img src="bilder/Sofia.jpg"></div>
-                <div><img src="bilder/Tonsberg.jpg" ></div>
-        <div class="bred"><img src="bilder/Alicia2.jpg"></div>
-        <div class="bred"><img src="bilder/Maya.jpg"></div>
-    </div>
-    <div class="container">
-        <img class="bred" src="bilder/FannyogSienna.jpg">
-        <div class="stor"><img src="bilder/Sienna.jpg"></div>
-        <div class="stor"><img src="bilder/Mayaogingeborg.jpg"></div>
-        <div class="bred"><img src="bilder/Camioghelene.jpg" alt=""></div>
-    </div>
-</section>
-    
+                <div><img src="bilder/Tonsberg.jpg"></div>
+                <div class="bred"><img src="bilder/Alicia2.jpg"></div>
+                <div class="bred"><img src="bilder/Maya.jpg"></div>
+            </div>
+            <div class="container">
+                <img class="bred" src="bilder/FannyogSienna.jpg">
+                <div class="stor"><img src="bilder/Sienna.jpg"></div>
+                <div class="stor"><img src="bilder/Mayaogingeborg.jpg"></div>
+                <div class="bred"><img src="bilder/Camioghelene.jpg" alt=""></div>
+            </div>
+    </section>
+
 </body>
+
 </html>

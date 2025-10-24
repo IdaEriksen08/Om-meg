@@ -5,186 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Timeplan</title>
-   <style>
-      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
-
-      body {
-         margin: 0;
-         font-family: "Cormorant Garamond", serif;
-         font-optical-sizing: auto;
-         font-weight: 500;
-         font-style: normal;
-         text-align: center;
-         background-color: azure;
-      }
-
-      header {
-         display: flex;
-         justify-content: space-evenly;
-         align-items: center;
-         background-color: transparent;
-         max-width: 600px;
-         margin: auto;
-         border-bottom: black 1px solid;
-         margin-top: 20px;
-      }
-
-      a {
-         color: black;
-         text-decoration: none;
-      }
-
-      a:hover {
-         transform: scale(1.1);
-      }
-
-      p {
-         margin: 0;
-         padding-top: 5px;
-         padding-left: 10px;
-         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-         font-weight: 600;
-         font-size: 12px;
-      }
-
-
-      h1 {
-         font-weight: 200;
-         font-size: 40px;
-         text-align: center;
-      }
-
-      table {
-         border-collapse: collapse;
-         margin: auto;
-         height: 450px;
-      }
-
-      td {
-         border: solid black;
-         padding: 10px;
-
-      }
-
-      .overskrift td {
-         background-color: lightblue;
-      }
-
-      .it {
-         background-color: rgb(178, 234, 178);
-      }
-
-      .soso {
-         background-color: rgb(254, 184, 254);
-      }
-
-      .norsk {
-         background-color: rgb(247, 134, 134);
-      }
-
-      .historie {
-         background-color: rgb(255, 210, 128);
-      }
-
-      .samføk {
-         background-color: rgb(155, 155, 199);
-      }
-
-      .Spansk {
-         background-color: lightyellow;
-      }
-
-      .gym {
-         background-color: rgb(218, 220, 249);
-      }
-
-      .matte {
-         background-color: lightpink;
-      }
-
-      .section2 {
-         text-align: center;
-         margin-top: 40px;
-      }
-
-      h2 {
-         font-weight: 300;
-         padding: 10px;
-         font-size: 30px;
-      }
-
-      .section3{
-         max-width: 900px;
-         display: flex;
-         margin: auto;
-         gap: 20px;
-         
-      }
-
-      .boks{
-         width: 400px;
-         background-color: floralwhite;
-         border: solid black 1px;
-         border-radius: 5px;
-         padding: 20px;
-      }
-
-      .boks h3{
-         font-size: 20px;
-      }
-
-      .boks p{
-         font-family:"Cormorant Garamond", serif; 
-         font-size: 15px;
-      }
-
-      #samfunnsøkonomi{
-         background-color: rgb(155, 155, 199);
-      }
-
-      #Informasjonsteknologi{
-         background-color: rgb(178, 234, 178);
-      }
-
-      #sosialantropologi{
-         background-color: rgb(254, 184, 254);
-      }
-
-      img{
-         height: 400px;
-         width: 300px;
-         border-radius: 5px;
-      }
-
-      .section4{
-         margin-top: 40px;
-         margin-bottom: 40px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 20px
-          ;
-       }
-       
-       .section4 div{
-         height: 400px;
-         width: 400px;
-         background-color: lightblue;
-         border-radius: 5px;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         flex-direction: column;
-       }
-
-       .section4 p{
-         font-size: small;
-         font-weight: 100;
-         max-width: 300px;
-       }
-
-       
-   </style>
+   <link rel="stylesheet" href="skoledag.css">
 </head>
 
 <body>
@@ -276,26 +97,33 @@
    </section>
 
    <section class="section3">
-         <div class="boks" id="samfunnsøkonomi">
-            <h3>Samfunnsøkonomi</h3>
-            <p>Jeg valgte samfunnsøkonomi som et av mine programfag fordi det virket som et nyttig og lærerikt fag som man kan få bruk for senere i tid. Jeg syns faget har mange relevante temaer, men samtidig er det et av de fagene jeg syns er litt mer utfordrene. Likevel tror jeg at jeg kommer til å få god nytte av det etterhvert.</p>
-         </div>
+      <div class="boks" id="samfunnsøkonomi">
+         <h3>Samfunnsøkonomi</h3>
+         <p>Jeg valgte samfunnsøkonomi som et av mine programfag fordi det virket som et nyttig og lærerikt fag som man
+            kan få bruk for senere i tid. Jeg syns faget har mange relevante temaer, men samtidig er det et av de fagene
+            jeg syns er litt mer utfordrene. Likevel tror jeg at jeg kommer til å få god nytte av det etterhvert.</p>
+      </div>
 
-         <div class="boks" id="Informasjonsteknologi">
-            <h3>Informasjonsteknologi</h3>
-            <p>Jeg valgte IT fordi det virket som et fag der man både lærer mye nyttig samtidig som man får lov til å være kreativ og eksprimentere selv. Det har det virkelig vært så langt og jeg trives veldig godt med faget. Selv om det tar litt tid før noen ting sitter har det blitt et av mine favorittfag i år.</p>
-         </div>
+      <div class="boks" id="Informasjonsteknologi">
+         <h3>Informasjonsteknologi</h3>
+         <p>Jeg valgte IT fordi det virket som et fag der man både lærer mye nyttig samtidig som man får lov til å være
+            kreativ og eksprimentere selv. Det har det virkelig vært så langt og jeg trives veldig godt med faget. Selv
+            om det tar litt tid før noen ting sitter har det blitt et av mine favorittfag i år.</p>
+      </div>
 
-         <div class="boks" id="sosialantropologi">
-          <h3>Sosiologi og sosialantropologi</h3>
-          <p>Jeg valgte sosiologi og sosialantropologi som et av mine programfag fordi jeg syns det er interresant å lære om hvordan folk handler basert på teorier som tar for seg både individ- og strukturnivå forklaringer. Det er et fag jeg føler man lærer mye nytt i samtidig som man får muligheten til å tenke mye selv.</p>
-         </div>
+      <div class="boks" id="sosialantropologi">
+         <h3>Sosiologi og sosialantropologi</h3>
+         <p>Jeg valgte sosiologi og sosialantropologi som et av mine programfag fordi jeg syns det er interresant å lære
+            om hvordan folk handler basert på teorier som tar for seg både individ- og strukturnivå forklaringer. Det er
+            et fag jeg føler man lærer mye nytt i samtidig som man får muligheten til å tenke mye selv.</p>
+      </div>
    </section>
 
    <section class="section4">
       <div>
          <h2>Bilde av megselv om 10 år</h2>
-         <p>Dette er bilde ChatGPT lagde til meg når jeg ba den generere et bilde av meg som sykepleier 10 år frem i tid.</p>
+         <p>Dette er bilde ChatGPT lagde til meg når jeg ba den generere et bilde av meg som sykepleier 10 år frem i
+            tid.</p>
       </div>
       <img src="bilder/ChatGPT Image 23. okt. 2025, 16_44_13.png" alt="">
    </section>
